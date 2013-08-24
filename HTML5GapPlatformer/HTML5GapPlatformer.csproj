@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86D3DB73-AA5F-4FEB-AB5E-6189D5F18E37}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTML5GapPlatformer</RootNamespace>
+    <AssemblyName>HTML5GapPlatformer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>HTML5GapPlatformer.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>HTML5GapPlatformer.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WP7GapClassLib, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml" />
+    <Content Include="GapLib\WP7GapClassLib.dll" />
+    <Content Include="GapSourceDictionary.xml" />
+    <Content Include="www\css\index.css" />
+    <Content Include="www\img\logo.png" />
+    <None Include="ManifestProcessor.js" />
+    <Content Include="www\assets\images\backgrounds\Layer0_0.png" />
+    <Content Include="www\assets\images\backgrounds\Layer0_1.png" />
+    <Content Include="www\assets\images\backgrounds\Layer0_2.png" />
+    <Content Include="www\assets\images\backgrounds\Layer1_0.png" />
+    <Content Include="www\assets\images\backgrounds\Layer1_1.png" />
+    <Content Include="www\assets\images\backgrounds\Layer1_2.png" />
+    <Content Include="www\assets\images\backgrounds\Layer2_0.png" />
+    <Content Include="www\assets\images\backgrounds\Layer2_1.png" />
+    <Content Include="www\assets\images\backgrounds\Layer2_2.png" />
+    <Content Include="www\assets\images\overlays\you_died.png" />
+    <Content Include="www\assets\images\overlays\you_lose.png" />
+    <Content Include="www\assets\images\overlays\you_win.png" />
+    <Content Include="www\assets\images\sprites\MonsterA.png" />
+    <Content Include="www\assets\images\sprites\MonsterB.png" />
+    <Content Include="www\assets\images\sprites\MonsterC.png" />
+    <Content Include="www\assets\images\sprites\MonsterD.png" />
+    <Content Include="www\assets\images\sprites\Player.png" />
+    <Content Include="www\assets\images\tiles\BlockA0.png" />
+    <Content Include="www\assets\images\tiles\BlockA1.png" />
+    <Content Include="www\assets\images\tiles\BlockA2.png" />
+    <Content Include="www\assets\images\tiles\BlockA3.png" />
+    <Content Include="www\assets\images\tiles\BlockA4.png" />
+    <Content Include="www\assets\images\tiles\BlockA5.png" />
+    <Content Include="www\assets\images\tiles\BlockA6.png" />
+    <Content Include="www\assets\images\tiles\BlockB0.png" />
+    <Content Include="www\assets\images\tiles\BlockB1.png" />
+    <Content Include="www\assets\images\tiles\Exit.png" />
+    <Content Include="www\assets\images\tiles\Gem.png" />
+    <Content Include="www\assets\images\tiles\Platform.png" />
+    <Content Include="www\assets\images\tiles\YellowGem.png" />
+    <Content Include="www\assets\levels\0.txt" />
+    <Content Include="www\assets\levels\1.txt" />
+    <Content Include="www\assets\levels\2.txt" />
+    <Content Include="www\assets\levels\3.txt" />
+    <Content Include="www\assets\sounds\ExitReached.mp3" />
+    <Content Include="www\assets\sounds\GemCollected.mp3" />
+    <Content Include="www\assets\sounds\Music.mp3" />
+    <Content Include="www\assets\sounds\PlayerFall.mp3" />
+    <Content Include="www\assets\sounds\PlayerJump.mp3" />
+    <Content Include="www\assets\sounds\PlayerKilled.mp3" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\easeljs\display\Bitmap.js" />
+    <Content Include="www\js\easeljs\display\BitmapSequence.js" />
+    <Content Include="www\js\easeljs\display\Container.js" />
+    <Content Include="www\js\easeljs\display\DisplayObject.js" />
+    <Content Include="www\js\easeljs\display\Graphics.js" />
+    <Content Include="www\js\easeljs\display\Shadow.js" />
+    <Content Include="www\js\easeljs\display\Shape.js" />
+    <Content Include="www\js\easeljs\display\SpriteSheet.js" />
+    <Content Include="www\js\easeljs\display\Stage.js" />
+    <Content Include="www\js\easeljs\display\Text.js" />
+    <Content Include="www\js\easeljs\events\MouseEvent.js" />
+    <Content Include="www\js\easeljs\geom\Matrix2D.js" />
+    <Content Include="www\js\easeljs\geom\Point.js" />
+    <Content Include="www\js\easeljs\geom\Rectangle.js" />
+    <Content Include="www\js\easeljs\utils\SpriteSheetUtils.js" />
+    <Content Include="www\js\easeljs\utils\Ticker.js" />
+    <Content Include="www\js\easeljs\utils\UID.js" />
+    <Content Include="www\js\platformer\ContentManager.js" />
+    <Content Include="www\js\platformer\Enemy.js" />
+    <Content Include="www\js\platformer\Gem.js" />
+    <Content Include="www\js\platformer\Level.js" />
+    <Content Include="www\js\platformer\PlatformerGame.js" />
+    <Content Include="www\js\platformer\PlatformerHelper.js" />
+    <Content Include="www\js\platformer\Player.js" />
+    <Content Include="www\js\platformer\Tile.js" />
+    <Content Include="www\js\platformer\XNARectangle.js" />
+    <Content Include="www\master.css" />
+    <Content Include="www\phonegap-1.3.0.js" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="www\img\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugins\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <PropertyGroup>
+    <PreBuildEvent>CScript "$(ProjectDir)/ManifestProcessor.js" "$(ProjectPath)"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
